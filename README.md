@@ -2,7 +2,7 @@
 
 Unlocks HiDPI ("Retina") scaling for external monitors on Apple Silicon Macs. That includes the full-size 2x mode macOS hides on 1440p and other low-density displays, e.g. looks like 2560×1440, rendered at 5120×2880.
 
-There are no virtual displays and no mirroring, and nothing runs in the background.
+There are no virtual displays and no mirroring. The menu bar app sits idle until you use it.
 
 ## What's included
 
@@ -39,6 +39,7 @@ Then quit HiDPI from its menu and delete `~/Applications/HiDPI.app`.
 
 ## Notes
 
+- Tested on an M1 Mac with a 1440p monitor.
 - This uses private CoreGraphics APIs, so a macOS update may break it.
 - HiDPI makes text smoother on low-density monitors, but it can't add pixels.
 - Other tools that edit display overrides can replace the override file.
